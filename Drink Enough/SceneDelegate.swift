@@ -14,9 +14,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+     /*   //make WeightVC first VC only if app loaded for the first time
+        var IsFirsttime = NSUserDefaults.StandardUserDefaults.BoolForKey("IsFirsttime");
+        if (!IsFirsttime)
+        {
+            Window.RootViewController = UIStoryboard.FromName("Main", null).InstantiateViewController("WeightVC");
+            NSUserDefaults.StandardUserDefaults.SetBool(true, "IsFirsttime");
+        }
+        else
+        {
+            // Start from the default initialized view controller, which is WaterIntakeVC
+        } */
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

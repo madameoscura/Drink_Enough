@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4D241D83060054C4D9 /* AppDelegate.swift */; };
 		49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */; };
-		49EDCD52241D83060054C4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD51241D83060054C4D9 /* ViewController.swift */; };
+		49EDCD52241D83060054C4D9 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD51241D83060054C4D9 /* WeightViewController.swift */; };
 		49EDCD55241D83060054C4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EDCD53241D83060054C4D9 /* Main.storyboard */; };
 		49EDCD58241D83060054C4D9 /* Drink_Enough.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD56241D83060054C4D9 /* Drink_Enough.xcdatamodeld */; };
 		49EDCD5A241D830B0054C4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDCD59241D830B0054C4D9 /* Assets.xcassets */; };
 		49EDCD5D241D830B0054C4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EDCD5B241D830B0054C4D9 /* LaunchScreen.storyboard */; };
+		49EDCD68241D98D30054C4D9 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD67241D98D30054C4D9 /* CalculateViewController.swift */; };
+		49EDCD6A241D99180054C4D9 /* WaterIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD69241D99180054C4D9 /* WaterIntakeViewController.swift */; };
+		49EDCD6C241D99430054C4D9 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD6B241D99430054C4D9 /* HistoryTableViewController.swift */; };
+		49EDCD6E241D99890054C4D9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD6D241D99890054C4D9 /* SettingsTableViewController.swift */; };
+		49EDCD70241D99B60054C4D9 /* WaterCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD6F241D99B60054C4D9 /* WaterCalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49EDCD4A241D83060054C4D9 /* Drink Enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDCD4D241D83060054C4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49EDCD51241D83060054C4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49EDCD51241D83060054C4D9 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		49EDCD54241D83060054C4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49EDCD57241D83060054C4D9 /* Drink_Enough.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drink_Enough.xcdatamodel; sourceTree = "<group>"; };
 		49EDCD59241D830B0054C4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49EDCD5C241D830B0054C4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49EDCD5E241D830B0054C4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EDCD67241D98D30054C4D9 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		49EDCD69241D99180054C4D9 /* WaterIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeViewController.swift; sourceTree = "<group>"; };
+		49EDCD6B241D99430054C4D9 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		49EDCD6D241D99890054C4D9 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		49EDCD6F241D99B60054C4D9 /* WaterCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +70,43 @@
 			children = (
 				49EDCD4D241D83060054C4D9 /* AppDelegate.swift */,
 				49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */,
-				49EDCD51241D83060054C4D9 /* ViewController.swift */,
-				49EDCD53241D83060054C4D9 /* Main.storyboard */,
+				49EDCD66241D98A30054C4D9 /* Model */,
+				49EDCD64241D986D0054C4D9 /* Controller */,
+				49EDCD65241D98980054C4D9 /* View */,
 				49EDCD59241D830B0054C4D9 /* Assets.xcassets */,
 				49EDCD5B241D830B0054C4D9 /* LaunchScreen.storyboard */,
 				49EDCD5E241D830B0054C4D9 /* Info.plist */,
 				49EDCD56241D83060054C4D9 /* Drink_Enough.xcdatamodeld */,
 			);
 			path = "Drink Enough";
+			sourceTree = "<group>";
+		};
+		49EDCD64241D986D0054C4D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49EDCD51241D83060054C4D9 /* WeightViewController.swift */,
+				49EDCD67241D98D30054C4D9 /* CalculateViewController.swift */,
+				49EDCD69241D99180054C4D9 /* WaterIntakeViewController.swift */,
+				49EDCD6B241D99430054C4D9 /* HistoryTableViewController.swift */,
+				49EDCD6D241D99890054C4D9 /* SettingsTableViewController.swift */,
+				49EDCD6F241D99B60054C4D9 /* WaterCalcViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49EDCD65241D98980054C4D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49EDCD53241D83060054C4D9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49EDCD66241D98A30054C4D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EDCD52241D83060054C4D9 /* ViewController.swift in Sources */,
+				49EDCD6A241D99180054C4D9 /* WaterIntakeViewController.swift in Sources */,
+				49EDCD70241D99B60054C4D9 /* WaterCalcViewController.swift in Sources */,
+				49EDCD52241D83060054C4D9 /* WeightViewController.swift in Sources */,
 				49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */,
 				49EDCD58241D83060054C4D9 /* Drink_Enough.xcdatamodeld in Sources */,
+				49EDCD6E241D99890054C4D9 /* SettingsTableViewController.swift in Sources */,
+				49EDCD6C241D99430054C4D9 /* HistoryTableViewController.swift in Sources */,
+				49EDCD68241D98D30054C4D9 /* CalculateViewController.swift in Sources */,
 				49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
