@@ -18,7 +18,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jY-eY-bzW">
                                 <rect key="frame" x="60" y="241" width="294" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="jHt-Oh-8yV"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-Rd-Zx4">
                                 <rect key="frame" x="150" y="335" width="114" height="36"/>
@@ -34,7 +37,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="bGY-8S-X3M" kind="show" id="fCS-Sp-3QR"/>
+                                    <action selector="weightIntakeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7y-3b-2PU"/>
+                                    <segue destination="bGY-8S-X3M" kind="show" identifier="goToCalculateVC" id="fCS-Sp-3QR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your weight below. We need it to calculate your daily water intake. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw5-VQ-zpq">
@@ -62,6 +66,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weight" id="DnR-Ir-YAy"/>
+                    <connections>
+                        <outlet property="weightTxtInput" destination="0jY-eY-bzW" id="aZ2-GM-xrP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +85,11 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dw-e5-sOb">
                                 <rect key="frame" x="60" y="241" width="294" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtCalcEditingChanged:" destination="bGY-8S-X3M" eventType="editingChanged" id="dzi-fo-uPO"/>
+                                    <action selector="txtCalcEditingDidBegin:" destination="bGY-8S-X3M" eventType="editingDidBegin" id="lcH-yr-F6o"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-Sd-lvN">
                                 <rect key="frame" x="150" y="335" width="114" height="36"/>
@@ -94,6 +105,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="doneButtonPressed:" destination="bGY-8S-X3M" eventType="touchUpInside" id="oNs-IB-57c"/>
                                     <segue destination="QXg-63-JRG" kind="show" id="MKc-Gg-fnK"/>
                                 </connections>
                             </button>
@@ -121,6 +133,9 @@
                         <viewLayoutGuide key="safeArea" id="whY-60-5xa"/>
                     </view>
                     <navigationItem key="navigationItem" id="X1m-ab-DMK"/>
+                    <connections>
+                        <outlet property="waterTxtInput" destination="1Dw-e5-sOb" id="ElG-Mh-oak"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5D-sY-uOZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,13 +149,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="etP-9q-ZEa">
-                                <rect key="frame" x="0.0" y="108" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="My Water Intake" id="u0s-uQ-2Cz"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I still have to drink:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o4-8L-J85">
                                 <rect key="frame" x="73" y="188" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -164,6 +172,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="etP-9q-ZEa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="My Water Intake" id="u0s-uQ-2Cz"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -187,6 +202,9 @@
                         <viewLayoutGuide key="safeArea" id="XNO-Sy-lJL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Intake" image="water25" id="KuI-6U-QQZ"/>
+                    <connections>
+                        <outlet property="waterOutputLabel" destination="bOR-Eq-USS" id="oQa-OA-GSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3T-rK-R1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
