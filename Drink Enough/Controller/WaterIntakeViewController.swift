@@ -9,20 +9,24 @@
 import UIKit
 
 class WaterIntakeViewController: UIViewController {
-
+    
+    @IBOutlet weak var goalReachedOutputLabel: UILabel!
+    @IBOutlet weak var drinkTxtInput: UITextField!
+    @IBOutlet weak var waterOutputLabel: UILabel!
+    
     let defaults = UserDefaults.standard
     private var amountDrank: Int = 0;
     private var amountToDrink: Int = 0;
-  //  Drink drink = new Drink();
-    @IBOutlet weak var waterOutputLabel: UILabel!
+    //  Drink drink = new Drink();
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         waterOutputLabel.text = defaults.string(forKey: "amount")
-        // Do any additional setup after loading the view.
+        
     }
     
-
-
+    
+    
 }

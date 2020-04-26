@@ -48,6 +48,7 @@ class CalculateViewController: UIViewController {
         }
     }
     
+    //What should happen when done Button is pressed
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         let amountToDrink = waterTxtInput.text
         finalAmountToDrink = Int(String(amountToDrink?.dropLast(3) ?? "no substring")) ?? 0
@@ -57,17 +58,4 @@ class CalculateViewController: UIViewController {
         print(amountToDrink ?? "no default value")
         print(finalAmountToDrink)
     }
-    
-    
-
-    //What should happen when done Button is pressed
-  /*  private void DoneButton_TouchUpInside(object sender, EventArgs e)
-    {
-        finalAmountToDrink = int.Parse(WaterTxtInput.Text.Remove(WaterTxtInput.Text.Length - 3, 3));
-        jsonDict["amount"] = finalAmountToDrink;
-        jsonDict["weight"] = int.Parse(userWeightInKg);
-        jsonHelper.jsonWrite(jsonDict);
-        Console.WriteLine(finalAmountToDrink);
-    } */
-
 }

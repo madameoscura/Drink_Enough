@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C0r-PY-eb6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C0r-PY-eb6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -203,6 +203,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Intake" image="water25" id="KuI-6U-QQZ"/>
                     <connections>
+                        <outlet property="drinkTxtInput" destination="ZCV-8I-wbp" id="U4L-oh-iex"/>
+                        <outlet property="goalReachedOutputLabel" destination="4o4-8L-J85" id="vGq-VF-Rcm"/>
                         <outlet property="waterOutputLabel" destination="bOR-Eq-USS" id="oQa-OA-GSV"/>
                     </connections>
                 </viewController>
@@ -572,8 +574,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clock" catalog="system" width="64" height="60"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="water25" width="25" height="25"/>
     </resources>
 </document>
