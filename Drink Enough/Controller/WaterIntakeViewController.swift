@@ -100,25 +100,6 @@ class WaterIntakeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     Console.WriteLine(amountDrank.ToString());
     Console.WriteLine(amountToDrink.ToString());
-    Console.WriteLine(((View.Bounds.Height - NavBar.Bounds.Height) * amountToDrink / jsonDict["amount"]).ToString());
-    
-    DrinkTxtInput.ResignFirstResponder();
-    waterView.TopAnchor.ConstraintEqualTo(NavBar.BottomAnchor, (View.Bounds.Height - NavBar.Bounds.Height)
-    * amountToDrink / jsonDict["amount"]).Active = true;
-    
-    if (amountToDrink <= 0)
-    {
-    GoalReachedOutputLabel.Text = $"I reached my goal of {jsonDict["amount"]} ml! Total amount I drank today:";
-    WaterOutputLabel.Text = (amountDrank).ToString() + " ml";
-    var alert = UIAlertController.Create("Congratulations", "You reached your daily drinking goal!", UIAlertControllerStyle.Alert);
-    alert.AddAction(UIAlertAction.Create("I am a champion", UIAlertActionStyle.Default, null));
-    PresentViewController(alert, true, null);
-    }
-    else
-    {
-    GoalReachedOutputLabel.Text = "Today I still have to drink:";
-    WaterOutputLabel.Text = Convert.ToString(amountToDrink) + " ml";
-    }
-    
-    */
+    Console.WriteLine(((View.Bounds.Height - NavBar.Bounds.Height) * amountToDrink / jsonDict["amount"]).ToString()); */
+
 }
