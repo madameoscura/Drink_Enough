@@ -150,7 +150,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I still have to drink:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o4-8L-J85">
-                                <rect key="frame" x="73" y="188" width="268" height="30"/>
+                                <rect key="frame" x="40" y="188" width="334" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -158,16 +158,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-bb-xnz">
                                 <rect key="frame" x="0.0" y="685" width="414" height="128"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.62740796232876717" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bMp-bj-nwe"/>
+                                </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DRINK" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-8I-wbp">
-                                <rect key="frame" x="120" y="354" width="174" height="61"/>
+                                <rect key="frame" x="120" y="374" width="174" height="57.5"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOR-Eq-USS">
-                                <rect key="frame" x="75" y="258" width="264" height="36"/>
+                                <rect key="frame" x="75" y="278" width="264" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -183,21 +187,20 @@
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZCV-8I-wbp" firstAttribute="top" secondItem="bOR-Eq-USS" secondAttribute="bottom" constant="60" id="46N-rT-qIm"/>
-                            <constraint firstItem="XNO-Sy-lJL" firstAttribute="bottom" secondItem="ZCV-8I-wbp" secondAttribute="bottom" constant="398" id="49R-TF-3Bg"/>
-                            <constraint firstItem="XNO-Sy-lJL" firstAttribute="trailing" secondItem="4o4-8L-J85" secondAttribute="trailing" constant="73" id="6rO-xc-FRO"/>
-                            <constraint firstItem="bOR-Eq-USS" firstAttribute="top" secondItem="4o4-8L-J85" secondAttribute="bottom" constant="40" id="6sN-OW-xIo"/>
+                            <constraint firstItem="XNO-Sy-lJL" firstAttribute="trailing" secondItem="4o4-8L-J85" secondAttribute="trailing" constant="40" id="6rO-xc-FRO"/>
+                            <constraint firstItem="bOR-Eq-USS" firstAttribute="top" secondItem="4o4-8L-J85" secondAttribute="bottom" constant="60" id="6sN-OW-xIo"/>
                             <constraint firstItem="XNO-Sy-lJL" firstAttribute="trailing" secondItem="Mch-bb-xnz" secondAttribute="trailing" id="7FK-it-nVf"/>
                             <constraint firstItem="ZCV-8I-wbp" firstAttribute="top" secondItem="bOR-Eq-USS" secondAttribute="bottom" constant="60" id="FS7-VW-KhF"/>
                             <constraint firstItem="Mch-bb-xnz" firstAttribute="leading" secondItem="XNO-Sy-lJL" secondAttribute="leading" id="G1v-Dh-Z3z"/>
-                            <constraint firstItem="4o4-8L-J85" firstAttribute="leading" secondItem="XNO-Sy-lJL" secondAttribute="leading" constant="73" id="GY6-4U-6PM"/>
+                            <constraint firstItem="4o4-8L-J85" firstAttribute="leading" secondItem="XNO-Sy-lJL" secondAttribute="leading" constant="40" id="GY6-4U-6PM"/>
                             <constraint firstItem="Mch-bb-xnz" firstAttribute="bottom" secondItem="XNO-Sy-lJL" secondAttribute="bottom" id="IW3-fz-K2l"/>
                             <constraint firstItem="XNO-Sy-lJL" firstAttribute="trailing" secondItem="ZCV-8I-wbp" secondAttribute="trailing" constant="120" id="JL1-al-5KD"/>
-                            <constraint firstItem="bOR-Eq-USS" firstAttribute="top" secondItem="4o4-8L-J85" secondAttribute="bottom" constant="40" id="KMC-JW-1tX"/>
-                            <constraint firstItem="Mch-bb-xnz" firstAttribute="top" secondItem="XNO-Sy-lJL" secondAttribute="top" constant="597" id="bQe-Ku-F3k"/>
+                            <constraint firstItem="bOR-Eq-USS" firstAttribute="top" secondItem="4o4-8L-J85" secondAttribute="bottom" constant="60" id="KMC-JW-1tX"/>
                             <constraint firstItem="XNO-Sy-lJL" firstAttribute="trailing" secondItem="bOR-Eq-USS" secondAttribute="trailing" constant="75" id="cUO-V7-A3I"/>
                             <constraint firstItem="bOR-Eq-USS" firstAttribute="leading" secondItem="XNO-Sy-lJL" secondAttribute="leading" constant="75" id="gHv-0N-JnZ"/>
                             <constraint firstItem="ZCV-8I-wbp" firstAttribute="leading" secondItem="XNO-Sy-lJL" secondAttribute="leading" constant="120" id="hw5-mV-fyl"/>
                             <constraint firstItem="4o4-8L-J85" firstAttribute="top" secondItem="XNO-Sy-lJL" secondAttribute="top" constant="100" id="kcl-Rn-CCe"/>
+                            <constraint firstItem="Mch-bb-xnz" firstAttribute="trailing" secondItem="XNO-Sy-lJL" secondAttribute="trailing" id="uI9-cH-YsW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XNO-Sy-lJL"/>
                     </view>
@@ -205,7 +208,9 @@
                     <connections>
                         <outlet property="drinkTxtInput" destination="ZCV-8I-wbp" id="U4L-oh-iex"/>
                         <outlet property="goalReachedOutputLabel" destination="4o4-8L-J85" id="vGq-VF-Rcm"/>
+                        <outlet property="navBar" destination="etP-9q-ZEa" id="2sS-1Y-fHE"/>
                         <outlet property="waterOutputLabel" destination="bOR-Eq-USS" id="oQa-OA-GSV"/>
+                        <outlet property="waterView" destination="Mch-bb-xnz" id="FSD-ps-zDQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3T-rK-R1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
