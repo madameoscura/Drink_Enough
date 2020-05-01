@@ -16,6 +16,7 @@ class WaterIntakeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var drinkTxtInput: UITextField!
     @IBOutlet weak var waterOutputLabel: UILabel!
     @IBOutlet weak var waterView: UIView!
+    @IBOutlet weak var tabBar: UITabBarItem!
     
     var selectedAmount: Int?
     let amountList : [(name: String, value: Int)] = [("50 ml", 50), ("100 ml", 100), ("150 ml", 150), ("200 ml (glass)", 200), ("250 ml (cup)", 250), ("300 ml", 300), ("350 ml", 350), ("400 ml", 400), ("450 ml", 450), ("500 ml (small bottle)", 500), ("600 ml", 600), ("700 ml", 700), ("800 ml", 800), ("900 ml", 900), ("1000 ml (bottle)", 1000), ("1100 ml", 1100), ("1200 ml", 1200), ("1300 ml", 1300), ("1400 ml", 1400), ("1500 ml (big bottle)", 1500)]
@@ -78,7 +79,7 @@ class WaterIntakeViewController: UIViewController, UIPickerViewDelegate, UIPicke
             amountToDrink = 0;
         }
         drinkTxtInput.resignFirstResponder()
-        waterView.topAnchor.constraint(equalTo: navBar.bottomAnchor, constant: CGFloat(Int((view.bounds.height - navBar.bounds.height))*amountToDrink / defaults.integer(forKey: "amount"))).isActive = true
+        waterView.topAnchor.constraint(equalTo: navBar.bottomAnchor, constant: (view.safeAreaLayoutGuide.layoutFrame.height - navBar.bounds.height) * CGFloat(amountToDrink) / CGFloat(defaults.integer(forKey: "amount"))).isActive = true
         
         if (amountToDrink <= 0)
         {

@@ -169,10 +169,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-bb-xnz">
-                                <rect key="frame" x="0.0" y="685" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="803" width="414" height="10"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.62740796232876717" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="bMp-bj-nwe"/>
+                                    <constraint firstAttribute="height" constant="10" id="bMp-bj-nwe"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DRINK" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-8I-wbp">
@@ -222,6 +222,7 @@
                         <outlet property="drinkTxtInput" destination="ZCV-8I-wbp" id="U4L-oh-iex"/>
                         <outlet property="goalReachedOutputLabel" destination="4o4-8L-J85" id="vGq-VF-Rcm"/>
                         <outlet property="navBar" destination="etP-9q-ZEa" id="2sS-1Y-fHE"/>
+                        <outlet property="tabBar" destination="KuI-6U-QQZ" id="t2M-n4-xLJ"/>
                         <outlet property="waterOutputLabel" destination="bOR-Eq-USS" id="oQa-OA-GSV"/>
                         <outlet property="waterView" destination="Mch-bb-xnz" id="FSD-ps-zDQ"/>
                     </connections>
