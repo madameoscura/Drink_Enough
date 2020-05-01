@@ -54,7 +54,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="weightIntakeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7y-3b-2PU"/>
-                                            <segue destination="bGY-8S-X3M" kind="show" identifier="goToCalculateVC" id="fCS-Sp-3QR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,6 +71,7 @@
                     <navigationItem key="navigationItem" title="Weight" id="DnR-Ir-YAy"/>
                     <connections>
                         <outlet property="weightTxtInput" destination="0jY-eY-bzW" id="aZ2-GM-xrP"/>
+                        <segue destination="bGY-8S-X3M" kind="show" identifier="goToCalculateVC" id="wNG-nw-TOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -511,7 +511,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-6Z-XWD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-6Z-XWD">
                                 <rect key="frame" x="144" y="356" width="116" height="35"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -548,6 +548,7 @@
                         <constraints>
                             <constraint firstItem="Thr-M8-6Ch" firstAttribute="bottom" secondItem="7Lu-k3-JC8" secondAttribute="bottom" constant="270.5" id="AZC-UG-xBj"/>
                             <constraint firstItem="uJz-6Z-XWD" firstAttribute="top" secondItem="lAq-fz-WCH" secondAttribute="bottom" constant="70" id="BTJ-Xb-OrT"/>
+                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="uJz-6Z-XWD" secondAttribute="trailing" constant="154" id="BUF-Sa-MhK"/>
                             <constraint firstItem="tuM-4o-6V0" firstAttribute="top" secondItem="Thr-M8-6Ch" secondAttribute="top" constant="100" id="H4M-yx-HNM"/>
                             <constraint firstItem="aRd-Bq-fiz" firstAttribute="top" secondItem="uJz-6Z-XWD" secondAttribute="bottom" constant="70" id="JNV-iw-4Tm"/>
                             <constraint firstItem="tuM-4o-6V0" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="L7i-WO-zle"/>
@@ -558,6 +559,7 @@
                             <constraint firstItem="lAq-fz-WCH" firstAttribute="top" secondItem="tuM-4o-6V0" secondAttribute="bottom" constant="40" id="W3D-Oi-9db"/>
                             <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="lAq-fz-WCH" secondAttribute="trailing" constant="20" id="XJ5-te-TSh"/>
                             <constraint firstItem="7Lu-k3-JC8" firstAttribute="top" secondItem="aRd-Bq-fiz" secondAttribute="bottom" constant="40" id="XyY-dz-kMA"/>
+                            <constraint firstItem="uJz-6Z-XWD" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="144" id="bMg-rR-Guv"/>
                             <constraint firstItem="lAq-fz-WCH" firstAttribute="top" secondItem="tuM-4o-6V0" secondAttribute="bottom" constant="40" id="gW3-YX-QUM"/>
                             <constraint firstItem="aRd-Bq-fiz" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="jDg-j9-b6c"/>
                             <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="7Lu-k3-JC8" secondAttribute="trailing" constant="20" id="pJ1-lQ-dN1"/>

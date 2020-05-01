@@ -43,6 +43,6 @@ class WeightViewController: UIViewController {
     
     @IBAction func weightIntakeButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToCalculateVC", sender: self)
-    }
+    } 
 }
 
