@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497C2C31245D95D7007BB728 /* WaterCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */; };
 		49BDBE31242D255000E89173 /* WaterIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */; };
 		49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4D241D83060054C4D9 /* AppDelegate.swift */; };
 		49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCalcViewController.swift; sourceTree = "<group>"; };
 		49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeViewController.swift; sourceTree = "<group>"; };
 		49EDCD4A241D83060054C4D9 /* Drink Enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDCD4D241D83060054C4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				49EDCD51241D83060054C4D9 /* WeightViewController.swift */,
 				49EDCD67241D98D30054C4D9 /* CalculateViewController.swift */,
 				49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */,
+				497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */,
 				49EDCD58241D83060054C4D9 /* Drink_Enough.xcdatamodeld in Sources */,
 				49EDCD68241D98D30054C4D9 /* CalculateViewController.swift in Sources */,
+				497C2C31245D95D7007BB728 /* WaterCalcViewController.swift in Sources */,
 				49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

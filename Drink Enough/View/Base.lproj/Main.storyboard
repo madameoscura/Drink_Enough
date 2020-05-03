@@ -511,6 +511,9 @@
                                 <rect key="frame" x="20" y="252" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="weightInputEditingChanged:" destination="7UK-wB-zSP" eventType="editingChanged" id="D8v-Q8-q1r"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-6Z-XWD">
                                 <rect key="frame" x="144" y="356" width="116" height="35"/>
@@ -524,6 +527,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calcButtonPressed:" destination="7UK-wB-zSP" eventType="touchUpInside" id="9wB-yU-rqH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended water intake:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-Bq-fiz">
                                 <rect key="frame" x="20" y="461" width="374" height="21"/>
@@ -569,6 +575,10 @@
                         <viewLayoutGuide key="safeArea" id="Thr-M8-6Ch"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Lp-ZB-lC8"/>
+                    <connections>
+                        <outlet property="waterOutputLabel" destination="7Lu-k3-JC8" id="2HA-CU-dV7"/>
+                        <outlet property="weightInput" destination="lAq-fz-WCH" id="ZpK-ZN-Dco"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqU-DD-sem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
