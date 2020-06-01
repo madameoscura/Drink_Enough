@@ -14,17 +14,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-     /*   //make WeightVC first VC only if app loaded for the first time
-        var IsFirsttime = NSUserDefaults.StandardUserDefaults.BoolForKey("IsFirsttime");
-        if (!IsFirsttime)
-        {
-            Window.RootViewController = UIStoryboard.FromName("Main", null).InstantiateViewController("WeightVC");
-            NSUserDefaults.StandardUserDefaults.SetBool(true, "IsFirsttime");
+        
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "isFirstTime") == nil {
+            defaults.set("No", forKey:"isFirstTime")
+            defaults.synchronize()
+             let storyboard = UIStoryboard(name: "Main", bundle: nil) //Write your storyboard name
+            let viewController = storyboard.instantiateViewController(withIdentifier: "WeightViewController")
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
         }
-        else
-        {
-            // Start from the default initialized view controller, which is WaterIntakeVC
-        } */
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

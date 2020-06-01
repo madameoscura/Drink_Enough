@@ -29,7 +29,7 @@ class WaterIntakeViewController: UIViewController, UIPickerViewDelegate, UIPicke
     override func viewDidLoad() {
         super.viewDidLoad()
         amountToDrink = defaults.integer(forKey: "amount")
-        waterOutputLabel.text = String(amountToDrink)
+        waterOutputLabel.text = String(amountToDrink) + " ml"
         createPickerView()
         dismissPickerView()
         

@@ -16,6 +16,7 @@ class WeightViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
     //Add observer to include "kg" behind numbers inserted
     @IBAction func txtEditingChanged(_ sender: UITextField) {
         if (!weightTxtInput.text!.isEmpty && weightTxtInput.text!.count >= 1)
