@@ -19,7 +19,10 @@
                                 <rect key="frame" x="0.0" y="123" width="414" height="274"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your weight below. We need it to calculate your daily water intake. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw5-VQ-zpq">
-                                        <rect key="frame" x="9.5" y="0.0" width="395" height="48"/>
+                                        <rect key="frame" x="20.5" y="0.0" width="373.5" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="380" id="DCY-OU-peo"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,10 +92,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-Zs-6DE">
                                 <rect key="frame" x="0.0" y="123" width="414" height="298"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We recommend you to drink the following amount of water every day, which you can, however, modify. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWF-I5-uZR">
-                                        <rect key="frame" x="22.5" y="0.0" width="369.5" height="72"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We recommend you to drink the following amount of water every day which you can, however, modify. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWF-I5-uZR">
+                                        <rect key="frame" x="24" y="0.0" width="366.5" height="72"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="HJ6-xz-Bw4"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="380" id="kIL-ts-AMV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -286,7 +290,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="af7-RR-OGk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="af7-RR-OGk">
                                 <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="af7-RR-OGk" id="iYq-F6-z4y">
@@ -333,6 +337,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oSH-Uy-tn9" kind="show" id="BRl-Fo-JBr"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mp6-GN-cOi" style="IBUITableViewCellStyleDefault" id="AT6-Hf-x4l">
                                         <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
@@ -499,6 +506,61 @@
             </objects>
             <point key="canvasLocation" x="3696" y="828"/>
         </scene>
+        <!--Water Settings View Controller-->
+        <scene sceneID="PhI-4y-ylD">
+            <objects>
+                <viewController id="oSH-Uy-tn9" customClass="WaterSettingsViewController" customModule="Drink_Enough" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLp-Us-agX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="UUn-mk-SOV">
+                                <rect key="frame" x="0.0" y="123" width="414" height="174"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We recommend you to drink the following amount of water every day which you can, however, modify. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSt-DN-H9V">
+                                        <rect key="frame" x="44" y="0.0" width="326" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="pvZ-CO-sWd"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="qfQ-2l-Plu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-zm-DrB">
+                                        <rect key="frame" x="60" y="126" width="294" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="G2S-xM-TLw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="294" id="tlv-V1-CwN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="dailyWaterEditingChanged:" destination="oSH-Uy-tn9" eventType="editingChanged" id="bTe-xx-BFp"/>
+                                            <action selector="dailyWaterEditingDidBegin:" destination="oSH-Uy-tn9" eventType="editingDidBegin" id="2m2-Iy-gOZ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79065328840000004" green="0.99192744489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="UUn-mk-SOV" firstAttribute="leading" secondItem="XLp-Us-agX" secondAttribute="leading" id="Gpq-tp-MA2"/>
+                            <constraint firstAttribute="trailing" secondItem="UUn-mk-SOV" secondAttribute="trailing" id="ImP-wW-5kh"/>
+                            <constraint firstItem="UUn-mk-SOV" firstAttribute="top" secondItem="36E-kl-txZ" secondAttribute="top" constant="35" id="MPg-Pu-Llf"/>
+                            <constraint firstItem="36E-kl-txZ" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UUn-mk-SOV" secondAttribute="bottom" constant="200" id="ocY-pv-O59"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="36E-kl-txZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ykx-6c-z7J"/>
+                    <connections>
+                        <outlet property="dailyWaterInput" destination="Wgy-zm-DrB" id="gqu-Jb-ppe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6r-TO-7Da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4635" y="636"/>
+        </scene>
         <!--Water Calc View Controller-->
         <scene sceneID="K9l-ZB-jiP">
             <objects>
@@ -507,70 +569,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-fz-WCH">
-                                <rect key="frame" x="20" y="252" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="weightInputEditingChanged:" destination="7UK-wB-zSP" eventType="editingChanged" id="D8v-Q8-q1r"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-6Z-XWD">
-                                <rect key="frame" x="144" y="356" width="116" height="35"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Calculate"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="calcButtonPressed:" destination="7UK-wB-zSP" eventType="touchUpInside" id="9wB-yU-rqH"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended water intake:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-Bq-fiz">
-                                <rect key="frame" x="20" y="461" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculated water intake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lu-k3-JC8">
-                                <rect key="frame" x="20" y="522" width="374" height="20.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My weight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-4o-6V0">
-                                <rect key="frame" x="20" y="188" width="374" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-Dw-j3M">
+                                <rect key="frame" x="20" y="118" width="374" height="390"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pjF-Wb-GOj">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="111"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My weight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-4o-6V0">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-fz-WCH">
+                                                <rect key="frame" x="0.0" y="63" width="374" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="XaV-SQ-uyn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="weightInputEditingChanged:" destination="7UK-wB-zSP" eventType="editingChanged" id="D8v-Q8-q1r"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-6Z-XWD">
+                                        <rect key="frame" x="0.0" y="171" width="374" height="48"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="u0v-fF-m8h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calcButtonPressed:" destination="7UK-wB-zSP" eventType="touchUpInside" id="9wB-yU-rqH"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eSN-TG-CpM">
+                                        <rect key="frame" x="0.0" y="279" width="374" height="111"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended water intake:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-Bq-fiz">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculated water intake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lu-k3-JC8">
+                                                <rect key="frame" x="0.0" y="63" width="374" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="vyV-Po-30t"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eSN-TG-CpM" firstAttribute="centerX" secondItem="K6I-Dw-j3M" secondAttribute="centerX" id="oTJ-rX-Vmj"/>
+                                    <constraint firstItem="uJz-6Z-XWD" firstAttribute="centerX" secondItem="K6I-Dw-j3M" secondAttribute="centerX" id="ryL-pg-jV1"/>
+                                    <constraint firstItem="pjF-Wb-GOj" firstAttribute="centerX" secondItem="K6I-Dw-j3M" secondAttribute="centerX" id="tcu-q9-a8H"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.79026737439999994" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="bottom" secondItem="7Lu-k3-JC8" secondAttribute="bottom" constant="270.5" id="AZC-UG-xBj"/>
-                            <constraint firstItem="uJz-6Z-XWD" firstAttribute="top" secondItem="lAq-fz-WCH" secondAttribute="bottom" constant="70" id="BTJ-Xb-OrT"/>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="uJz-6Z-XWD" secondAttribute="trailing" constant="154" id="BUF-Sa-MhK"/>
-                            <constraint firstItem="tuM-4o-6V0" firstAttribute="top" secondItem="Thr-M8-6Ch" secondAttribute="top" constant="100" id="H4M-yx-HNM"/>
-                            <constraint firstItem="aRd-Bq-fiz" firstAttribute="top" secondItem="uJz-6Z-XWD" secondAttribute="bottom" constant="70" id="JNV-iw-4Tm"/>
-                            <constraint firstItem="tuM-4o-6V0" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="L7i-WO-zle"/>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="tuM-4o-6V0" secondAttribute="trailing" constant="20" id="OxG-Ta-hTx"/>
-                            <constraint firstItem="7Lu-k3-JC8" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="PDU-NX-aK6"/>
-                            <constraint firstItem="7Lu-k3-JC8" firstAttribute="top" secondItem="aRd-Bq-fiz" secondAttribute="bottom" constant="40" id="Q0Z-N8-Gcc"/>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="aRd-Bq-fiz" secondAttribute="trailing" constant="20" id="SDr-Ce-jnp"/>
-                            <constraint firstItem="lAq-fz-WCH" firstAttribute="top" secondItem="tuM-4o-6V0" secondAttribute="bottom" constant="40" id="W3D-Oi-9db"/>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="lAq-fz-WCH" secondAttribute="trailing" constant="20" id="XJ5-te-TSh"/>
-                            <constraint firstItem="7Lu-k3-JC8" firstAttribute="top" secondItem="aRd-Bq-fiz" secondAttribute="bottom" constant="40" id="XyY-dz-kMA"/>
-                            <constraint firstItem="uJz-6Z-XWD" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="144" id="bMg-rR-Guv"/>
-                            <constraint firstItem="lAq-fz-WCH" firstAttribute="top" secondItem="tuM-4o-6V0" secondAttribute="bottom" constant="40" id="gW3-YX-QUM"/>
-                            <constraint firstItem="aRd-Bq-fiz" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="jDg-j9-b6c"/>
-                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="7Lu-k3-JC8" secondAttribute="trailing" constant="20" id="pJ1-lQ-dN1"/>
-                            <constraint firstItem="lAq-fz-WCH" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="qvO-73-ADk"/>
+                            <constraint firstItem="K6I-Dw-j3M" firstAttribute="leading" secondItem="Thr-M8-6Ch" secondAttribute="leading" constant="20" id="ahe-zR-gI3"/>
+                            <constraint firstItem="Thr-M8-6Ch" firstAttribute="trailing" secondItem="K6I-Dw-j3M" secondAttribute="trailing" constant="20" id="iuT-8U-yDb"/>
+                            <constraint firstItem="K6I-Dw-j3M" firstAttribute="top" secondItem="Thr-M8-6Ch" secondAttribute="top" constant="30" id="shv-1k-dmY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Thr-M8-6Ch"/>
                     </view>
@@ -582,7 +658,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqU-DD-sem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4531.884057971015" y="829.6875"/>
+            <point key="canvasLocation" x="4635" y="1325"/>
         </scene>
         <!--Settings-->
         <scene sceneID="a2U-B9-bPL">

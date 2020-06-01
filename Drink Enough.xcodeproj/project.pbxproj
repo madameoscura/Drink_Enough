@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492E2D572460489800BFA42B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E2D562460489800BFA42B /* Utility.swift */; };
+		492E2D59246087C600BFA42B /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E2D58246087C600BFA42B /* Drink.swift */; };
 		497C2C31245D95D7007BB728 /* WaterCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */; };
+		497C2C33245F16AA007BB728 /* WaterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C2C32245F16AA007BB728 /* WaterSettingsViewController.swift */; };
+		497C2C35245F266C007BB728 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C2C34245F266C007BB728 /* HistoryTableViewController.swift */; };
 		49BDBE31242D255000E89173 /* WaterIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */; };
 		49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4D241D83060054C4D9 /* AppDelegate.swift */; };
 		49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */; };
@@ -20,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492E2D562460489800BFA42B /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		492E2D58246087C600BFA42B /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCalcViewController.swift; sourceTree = "<group>"; };
+		497C2C32245F16AA007BB728 /* WaterSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSettingsViewController.swift; sourceTree = "<group>"; };
+		497C2C34245F266C007BB728 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeViewController.swift; sourceTree = "<group>"; };
 		49EDCD4A241D83060054C4D9 /* Drink Enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDCD4D241D83060054C4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492E2D5A246087D800BFA42B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				492E2D58246087C600BFA42B /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		49EDCD41241D83060054C4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +82,9 @@
 			children = (
 				49EDCD4D241D83060054C4D9 /* AppDelegate.swift */,
 				49EDCD4F241D83060054C4D9 /* SceneDelegate.swift */,
-				49EDCD64241D986D0054C4D9 /* Controller */,
+				492E2D5A246087D800BFA42B /* Model */,
 				49EDCD65241D98980054C4D9 /* View */,
+				49EDCD64241D986D0054C4D9 /* Controller */,
 				49EDCD59241D830B0054C4D9 /* Assets.xcassets */,
 				49EDCD5B241D830B0054C4D9 /* LaunchScreen.storyboard */,
 				49EDCD5E241D830B0054C4D9 /* Info.plist */,
@@ -83,6 +100,9 @@
 				49EDCD67241D98D30054C4D9 /* CalculateViewController.swift */,
 				49BDBE30242D255000E89173 /* WaterIntakeViewController.swift */,
 				497C2C30245D95D7007BB728 /* WaterCalcViewController.swift */,
+				497C2C32245F16AA007BB728 /* WaterSettingsViewController.swift */,
+				497C2C34245F266C007BB728 /* HistoryTableViewController.swift */,
+				492E2D562460489800BFA42B /* Utility.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,12 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492E2D572460489800BFA42B /* Utility.swift in Sources */,
 				49BDBE31242D255000E89173 /* WaterIntakeViewController.swift in Sources */,
 				49EDCD52241D83060054C4D9 /* WeightViewController.swift in Sources */,
+				492E2D59246087C600BFA42B /* Drink.swift in Sources */,
 				49EDCD4E241D83060054C4D9 /* AppDelegate.swift in Sources */,
 				49EDCD58241D83060054C4D9 /* Drink_Enough.xcdatamodeld in Sources */,
 				49EDCD68241D98D30054C4D9 /* CalculateViewController.swift in Sources */,
+				497C2C33245F16AA007BB728 /* WaterSettingsViewController.swift in Sources */,
 				497C2C31245D95D7007BB728 /* WaterCalcViewController.swift in Sources */,
+				497C2C35245F266C007BB728 /* HistoryTableViewController.swift in Sources */,
 				49EDCD50241D83060054C4D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

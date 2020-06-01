@@ -56,6 +56,7 @@ class WaterIntakeViewController: UIViewController, UIPickerViewDelegate, UIPicke
         let pickerView = UIPickerView()
         pickerView.delegate = self
         drinkTxtInput.inputView = pickerView
+        selectedAmount = amountList[pickerView.selectedRow(inComponent: 0)].value
     }
     
     func dismissPickerView() {
